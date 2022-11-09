@@ -12,6 +12,7 @@
 #define ESC 27
 #define CR
 #include "menu.h"
+#include "emptypes.h"
 
 int whichIsBigger(int x, int y, int z)
 {
@@ -32,28 +33,7 @@ int whichIsBigger(int x, int y, int z)
         return z;
     }
 }
-typedef struct Employee{
-    int id;
-    int salary;
-    char name[20];
 
-}Employee;
-typedef struct Department{
-    Employee emps[3];
-
-}Department;
-
-Employee GetEmployee(){
-    Employee emp;
-    printf("Enter employee id: ");
-    scanf("%d",&emp.id);
-    fflush(stdin);
-    printf("Enter Emplyee Name: ");
-    gets(emp.name);
-    printf("Enter Employee Salary: ");
-    scanf("%d",&emp.salary);
-    return emp;
-}
 void DisplayEmployee(Employee emp){
     printf("Employee Data is: \n");
     printf("| ID:%d | Name:%s | Salary:%d |",emp.id,emp.name,emp.salary);
@@ -66,7 +46,7 @@ void GetAndDisplayEmployee(){
 }
 
 void getAndPrintEmployeeArray(Employee emps[],int size){
-    for(int i=0 ;i<3;i++){
+    for(int i=0 ;i<size;i++){
         printf("Enter Data of Employee %d: \n",i+1);
         printf("ID: ");
         scanf("%d",&emps[i].id);
