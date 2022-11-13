@@ -16,7 +16,7 @@ Student* GetStudent(){
     scanf("%d",&(student->id));
     fflush(stdin);
     printf("Enter Student Name: ");
-    gets(student->name);
+    fgets(student->name,sizeof(student->name),stdin);
     printf("Enter number of subjects: ");
     scanf("%d",&(student->numberOfSubjects));
     fflush(stdin);

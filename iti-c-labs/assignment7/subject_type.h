@@ -12,7 +12,7 @@ Subject GetSubject(){
     scanf("%d",&subject.id);
     fflush(stdin);
     printf("Enter Subject Name: ");
-    gets(subject.name);
+    fgets(subject.name,sizeof(subject.name),stdin);
     printf("Enter Subject points: ");
     scanf("%d",&subject.points);
     fflush(stdin);
