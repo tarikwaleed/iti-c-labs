@@ -15,10 +15,14 @@
 #include "menu.h"
 #include "emptypes.h"
 #include "linetype.h"
+#define MAXSTUDENTS 100
+#include "student_type.h"
+#include "subject_type.h"
 
 int main()
 {
-   /*Employee* arr[3];
+   /* Problem1
+   Employee* arr[3];
    int n;
    for(int i=0;i<3;i++){
     printf("Enter The number of employees: \n");
@@ -33,8 +37,27 @@ int main()
     }
 
    }*/
-   Student* arr[100];
+   // Problem2
+   Student* students[MAXSTUDENTS];
+   char c='y';
+   int i=0;
+   int numberOfStudents=0;
+   do{
+    printf("Do you want to Create new students?  Enter(Y/N)\n");
+    c=getch();
+    if(c=='y'){
+        students[i]=GetStudent();
+        printf("Got Student\n");
+        numberOfStudents++;
+        i++;
+    }
+   }while(c!='n');
+   for(int i=0;i<numberOfStudents;i++){
+        printf("Sum grades for student %d  is: %d\n",i+1,CalculateSum(students[i]->subjects,students[i]->numberOfSubjects));
+   }
+   for(int i=0;i<numberOfStudents;i++){
+    printf("Average grades for student %d is: %d\n",i+1,CalculateAverage(students[i]->subjects,students[i]->numberOfSubjects));
 
-
+   }
     return (0);
 }

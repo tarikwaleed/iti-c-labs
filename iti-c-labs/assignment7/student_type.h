@@ -1,20 +1,26 @@
 #ifndef STUDENT_TYPE_H
 #define STUDENT_TYPE_H
-
-
+#include "subject_type.h"
 typedef struct Student{
     int id;
     char name[20];
+    int numberOfSubjects;
+    Subject* subjects;
+
 
 }Student;
 
-Student GetStudent(){
-    Student student;
+Student* GetStudent(){
+    Student* student=malloc(sizeof(Student));
     printf("Enter Student id: ");
-    scanf("%d",&student.id);
+    scanf("%d",&(student->id));
     fflush(stdin);
     printf("Enter Student Name: ");
-    gets(student.name);
+    gets(student->name);
+    printf("Enter number of subjects: ");
+    scanf("%d",&(student->numberOfSubjects));
+    fflush(stdin);
+    student->subjects=GetMultipleSubjects(student->numberOfSubjects);
     return student;
 }
 void DisplayStudent(Student s){
