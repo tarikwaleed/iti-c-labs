@@ -58,40 +58,6 @@ int CalculateLength(Line line)
 }
 int main()
 {
-    /* Problem1
-    int x = 3, y = 5;
-    Swap(&x, &y);
-    printf("Now X is:%d and Y is:%d",x,y);
-    */
-
-    /*Problem2
-    int arr[5]={1,2,3,4,5};
-    SetColor(COLORED);
-    printf("The Original array is: \n");
-    SetColor(DEFAULTCOLOR);
-    for(int i=0;i<5;i++){
-        printf("arr[%d] is: %d\n",i,arr[i]);
-    }
-    MultiplyArray(arr,5);
-    SetColor(COLORED);
-    printf("The Multiplied array is: \n");
-    SetColor(DEFAULTCOLOR);
-    for(int i=0;i<5;i++){
-        printf("arr[%d] is: %d\n",i,arr[i]);
-    }
-    printf("\n");
-    */
-    /*
-    Line line;
-    line.Start.x=1;
-    line.Start.y=1;
-    line.End.x=4;
-    line.End.y=4;
-    ChangePosition(&line,2,2);
-    DisplayLineCoordinates(line);
-    int length=CalculateLength(line);
-    DisplayLenght(length);
-    */
 
     int n;
     printf("Enter Number of lines you want to reserve:");

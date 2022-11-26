@@ -61,20 +61,3 @@ void getAndPrintEmployeeArray(Employee emps[],int size){
         printf("ID: %d | Name: %s | Salary: %d \n",emps[i].id,emps[i].name,emps[i].salary);
     }
 }
-
-int main()
-{
-    // Problem1
-    //printf("%d",whichIsBigger(5,8,5));
-
-    //Problem2
-    //Employee emp;
-    //GetAndDisplayEmployee();
-
-    //Problem3
-    //Employee emps[3];
-    //getAndPrintEmployeeArray(emps);
-    menu();
-
-    return (0);
-}

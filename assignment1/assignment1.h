@@ -40,16 +40,3 @@ void qoutientAndReminder(int x, int y)
     printf("Quotient is:%d\n", x / y);
     printf("Reminder is %d\n", x % y);
 }
-int main(int argc, char const *argv[])
-{
-    // printHelloWorld();
-    // printFloat();
-    // printAsciiChar('b');
-    // int result = multiplier(5, 6);
-    // printf("%d", result);
-
-    // hexaPrinter(190);
-    qoutientAndReminder(122, 5);
-
-    return 0;
-}

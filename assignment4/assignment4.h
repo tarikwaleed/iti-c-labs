@@ -61,8 +61,7 @@ void keytype()
 
 
 
-COORD coord= {0,0};                  // this is global variable
-//center of axis is set to the top left cornor of the screen
+COORD coord= {0,0};                 
 void gotoxy(int x,int y)
 {
     coord.X=x;
@@ -152,25 +151,4 @@ void menu()
     }
     while(1);
 
-}
-int main()
-{
-    //printfullname();
-    //keytype();
-    // frequencies();
-
-    //gotoxy(50,5);
-    //SetColor(10);
-    //printf("New");
-    //gotoxy(50,6);
-    //SetColor(100);
-    //printf("Delete");
-    //gotoxy(50,7);
-    //SetColor(150);
-    //printf("Edit");
-
-
-
-    menu();
-    return (0);
 }

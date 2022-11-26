@@ -73,24 +73,3 @@ void sumAndAverage(int a[2][3])
         printf("\n");
     }
 }
-int main(int argc, char const *argv[])
-{
-    // Problem 1
-    // printArray();
-
-    // Problem 2
-    // int array[]={1,2,3};
-    // int result=findMax(array,3);
-    // printf("Max: %d",result);
-
-    // Problem 3
-    // int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    // int b[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    // sumMatrices(a,b);
-
-    // Problem 4
-    int a[2][3] = {{1, 2, 3}, {4, 5, 6}};
-    sumAndAverage(a);
-
-    return 0;
-}
