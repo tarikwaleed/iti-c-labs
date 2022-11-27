@@ -1,13 +1,16 @@
 #ifndef EMPTYPES_H
 #define EMPTYPES_H
 #include "../definitions.h"
-
 typedef struct Employee{
     int id;
     int salary;
     char name[20];
 
 }Employee;
+typedef struct Department{
+    Employee emps[3];
+
+}Department;
 
 Employee GetEmployee(){
     Employee emp;
