@@ -23,5 +23,8 @@ Employee GetEmployee(){
     scanf("%d",&emp.salary);
     return emp;
 }
+void DisplayEmployee(Employee emp){
+    printf("| ID:%d | Name:%s | Salary:%d | \n",emp.id,emp.name,emp.salary);
+}
 
 #endif // EMPTYPES_H

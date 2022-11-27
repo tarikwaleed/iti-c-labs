@@ -18,7 +18,7 @@ Employee GetEmployee(){
     scanf("%d",&emp.id);
     fflush(stdin);
     printf("Enter Emplyee Name: ");
-    fgets(emp.name,sizeof(emp.name),stdin);
+    gets(emp.name);
     printf("Enter Employee Salary: ");
     scanf("%d",&emp.salary);
     return emp;

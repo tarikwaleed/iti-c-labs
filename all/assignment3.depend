@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1668320803 source:c:\users\takizee\documents\assignment3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<windows.h>
+	"menu.h"
+	"emptypes.h"
+	"linetype.h"
+	"student_type.h"
+	"subject_type.h"
+
+1667959670 c:\users\takizee\documents\assignment3\include\menu.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"emptypes.h"
+
+1668253678 c:\users\takizee\documents\assignment3\include\emptypes.h
+
+1668041805 c:\users\takizee\documents\assignment3\include\linetype.h
+
+1668316483 c:\users\takizee\documents\assignment3\include\student_type.h
+	"subject_type.h"
+
+1668320677 c:\users\takizee\documents\assignment3\include\subject_type.h
+

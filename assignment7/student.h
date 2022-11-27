@@ -1,6 +1,6 @@
 #ifndef STUDENT_TYPE_H
 #define STUDENT_TYPE_H
-#include "subject_type.h"
+#include "subject.h"
 typedef struct Student{
     int id;
     char name[20];
