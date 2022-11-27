@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "definitions.h"
 void printArray()
 {
     int size;

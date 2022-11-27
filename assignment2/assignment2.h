@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include<ctype.h>
+#include "definitions.h"
 int isEven(int n)
 {
     if (n % 2 == 0)

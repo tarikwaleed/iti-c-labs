@@ -1,16 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include<windows.h>
-#define MAXLENGTH 100
-#define DEFAULTCOLOR 255
-#define COLORED 10
-#define HOME 71
-#define UP 73
-#define DN 81
-#define END 79
-#define ESC 27
-#define CR 13
+#include "definitions.h"
 void printfullname()
 {
     char first[100];

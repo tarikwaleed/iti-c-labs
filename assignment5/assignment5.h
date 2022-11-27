@@ -1,19 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include<windows.h>
-#define MAXLENGTH 100
-#define DEFAULTCOLOR 255
-#define COLORED 10
-#define HOME 71
-#define UP 73
-#define DN 81
-#define END 79
-#define ESC 27
-#define CR
-#include "menu.h"
-#include "emptypes.h"
-
+#include "definitions.h"
 int whichIsBigger(int x, int y, int z)
 {
     if (x > y)

@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "definitions.h"
 void printHelloWorld()
 {
     printf("Hello, World!");
