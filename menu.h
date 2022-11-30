@@ -41,10 +41,10 @@ void SetColor(int ForgC)
     return;
 }
 char words[2][20] = {"Add Employee","Display Employees"};
+// this function will Redraw the screen with
+// the word number "choice" colored
 void printmenu(int choice)
 {
-
-
     for(int i = 0; i < 2; i++)
     {
         if(i==choice-1)
@@ -112,23 +112,24 @@ void menu()
                 switch(index)
                 {
                 case 1:
-                    printf("Enter employee id: ");
-                    scanf("%d",&emps[currentPosition].id);
-                    fflush(stdin);
-                    printf("Enter Emplyee Name: ");
-                    gets(emps[currentPosition].name);
-                    printf("Enter Employee Salary: ");
-                    scanf("%d",&emps[currentPosition].salary);
+                    // printf("Enter employee id: ");
+                    // scanf("%d",&emps[currentPosition].id);
+                    // fflush(stdin);
+                    // printf("Enter Emplyee Name: ");
+                    // gets(emps[currentPosition].name);
+                    // printf("Enter Employee Salary: ");
+                    // scanf("%d",&emps[currentPosition].salary);
+                    emps[currentPosition]=GetEmployee();
                     currentPosition++;
-
                     break;
                 case 2:
                     for (int i=0; i<currentPosition; i++)
                     {
                         if(emps[i].id!=0)
                         {
-                            printf("Data of Employee %d is: \n",i+1);
-                            printf("ID: %d | Name: %s | Salary: %d \n",emps[i].id,emps[i].name,emps[i].salary);
+                            // printf("Data of Employee %d is: \n",i+1);
+                            // printf("ID: %d | Name: %s | Salary: %d \n",emps[i].id,emps[i].name,emps[i].salary);
+                            DisplayEmployee(emps[i]);
 
                         }
 
@@ -145,4 +146,3 @@ void menu()
 }
 
 
-#endif // MENU_H
